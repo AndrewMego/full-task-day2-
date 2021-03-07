@@ -1,7 +1,59 @@
+# Andrew Magdy Fathi 
+## ITI 3month Assiut
+[githun Link](https://github.com/AndrewMego/task-Day-2.git)
+
 git init 
 git status
 git add . 
 git commit -m "Day 2 Task From andrew Magdy"
 git log --oneline
 git remote add master origin https://github.com/AndrewMego/task-Day-2.git
-git push origin master	
+git push origin master
+git branch dev 
+git branch test
+git checkout dev
+git add .
+git commit -m "add to files to dev"
+git push origin dev
+git checkout master
+git merge dev
+git push origin master
+
+
+# Tell me how to remove them locally and remotly.
+remotely: git push origin --delete dev
+locally: git branch -d dev
+
+
+# create an annoted tag with tagname v1.0.0
+ git tag v"1.0.0" 58200fa
+git tag 
+git push origin v1.0.0
+
+
+# tell me how to delete tag locally and remotely.
+remotely: git push origin --delete v1.0.
+locally: git tag -d v1.0.
+
+# git rebase
+In Git, there are two main ways to integrate changes from one branch into another: the merge and the rebase.
+example marge examinate with master branch
+
+git checkout experiment
+git rebase master
+First, rewinding head to replay your work on top of it...
+Applying: added staged command
+
+git checkout master
+git merge experiment
+
+# Pull requests
+ let you tell others about changes you've pushed to a branch in a repository on GitHub.
+Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.	
+
+add image in README FILE
+
+
+![Screenshot](pic.jpg)
+
+
